@@ -10,7 +10,9 @@
     <h1>論文一覧</h1>
     <ul>
         @foreach ( $articles as $article)
-        <li><a href="/articles/{{ $article->id }}">{{ $article->title }}</a></li>
+        <li>
+            <a href="/articles/{{ $article->id }}">{{ $article->title }}</a>
+        </li>
         @endforeach
     </ul>
     <a href="/articles/create"> <input type="submit" value="新規論文投稿"></a>
